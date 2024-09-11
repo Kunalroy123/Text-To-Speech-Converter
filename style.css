@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", "sans-serif" ;
+
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #010758, #490d61);
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+#heading{
+    font-size: 4rem;
+    color: #fff;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px){
+    #heading{
+        font-size: 1.8rem;
+        margin-top: 1rem;
+    }
+}
+
+#heading span{
+    color: rgb(255, 0, 0);
+    text-decoration: underline white;
+}
+
+#textarea{
+    height: 300px;
+    width: 90%;
+    max-width: 650px;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    margin: 2rem 0;
+    padding: 20px;
+    background: rgb(105, 80, 138);
+    color: #fff;
+    font-size: 1.3rem;
+    resize: none;
+    box-sizing: border-box;
+}
+
+#textarea::placeholder{
+    color: #DDD;
+}
+
+.row{
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .row{
+        width: 90%;
+    }
+}
+
+select{
+    background-color: rgb(105, 80, 138);
+    flex: 1;
+    height: 50px;
+    align-items: center;
+    border-radius: 2rem;
+    padding: 0 15px;
+    font-size: 1.3rem;
+    color: #fff;
+    outline: none;
+    border: none;
+    appearance: none;
+    background-image: url(images/down-arrow.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position-x: calc(100% - 20px);
+    background-position-y: 15px;
+    margin-right: 1rem;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    select{
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+.listen{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 5, 5);
+    width: 130px;
+    color: #fff;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    padding: 0 22px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .listen{
+        font-size: 1rem;
+    }
+}
+
+.listen img{
+    height: 25px;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    .listen img{
+        height: 15px;
+        padding-right: 5px;
+    }
+}
